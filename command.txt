@@ -1,0 +1,5 @@
+command
+
+golang開發環境：
+docker run --rm -it --name go-test -v .:/go/src/golang_test:rw golang bash
+docker run --rm -it --name go-test -v /Users/pipi/projects/golang/golang-mongodb-docker/golang_test:/go/src/golang_test:rw golang bash
