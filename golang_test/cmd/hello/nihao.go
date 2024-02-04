@@ -1,4 +1,4 @@
-package hello
+package hello_nihao
 
 import (
 	"fmt"
@@ -6,14 +6,17 @@ import (
 	"rsc.io/quote"
 	"golang_test/cmd/hello/sentence"
 	"golang_test/internal/greetings"
-	// "golang_test/internal/data/person"
+	"golang_test/internal/data"
 )
 func Hello() {
-	fmt.Println("Hello, Pipi!")
+	fmt.Println("Nihao, Pipi!")
+	// test external package
 	fmt.Println(quote.Go())
+
+	// test random sentence
 	fmt.Println(sentence.Random())
 
-	//test greetings someone..
+	// test greetings someone..
 	message, err := greetings.Hello("Pipi")
 	fmt.Println(message)
 
@@ -28,7 +31,7 @@ func Hello() {
 	fmt.Println(message)
 
 	// test mongo database
-	// person.GetAdminDatabase()
+	data.person.GetAdminDatabase()
 
 
 	
