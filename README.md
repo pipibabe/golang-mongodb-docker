@@ -3,7 +3,7 @@
 # run golang development environment on docker
 
 	$ cd ~/projects/golang-mongodb-docker/golang_test \
-	docker run --rm -it --name go-test -v .:/usr/local/go/src/golang_test:rw --workdir /usr/local/go/src/golang_test/cmd golang
+	docker run --rm -it --name go-test -v .:/usr/local/go/src/golang_test:rw --workdir /usr/local/go/src/golang_test golang
 
 # create go module
 	switch to your module folder
