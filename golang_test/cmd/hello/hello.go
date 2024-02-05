@@ -10,10 +10,13 @@ import (
 )
 func Hello() {
 	fmt.Println("Hello, Pipi!")
+	// test external package
 	fmt.Println(quote.Go())
+
+	// test random sentence
 	fmt.Println(sentence.Random())
 
-	//test greetings someone..
+	// test greetings someone..
 	message, err := greetings.Hello("Pipi")
 	fmt.Println(message)
 
