@@ -6,7 +6,7 @@ import (
 	"rsc.io/quote"
 	"golang_test/cmd/hello/sentence"
 	"golang_test/internal/greetings"
-	"golang_test/internal/data"
+	// "golang_test/internal/data"
 )
 func Hello() {
 	fmt.Println("Hello, Pipi!")
@@ -23,16 +23,16 @@ func Hello() {
 
 	// test empty name
 	log.SetPrefix("greetings: ")
-    log.SetFlags(0)
+	log.SetFlags(83) // log.Ldate(1)|log.Ltime(2)|log.Lshortfile(16)Lmsgprefix(64)
 	message, err = greetings.Hello("")
 	if err != nil {
 		log.Println(err)
 		// log.Panic(err)
 	}
-	fmt.Println(message)
+	log.Println(message)
 
 	// test mongo database
-	data.GetAdminDatabase()
+	// data.Insert()
 
 
 	
